@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="110dp">
+
+        <TextView
+            android:id="@+id/title_hotspot_two"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/time_hotspot_two"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_hotspot_two"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"/>
+
+</LinearLayout>

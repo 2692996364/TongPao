@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/constraint_recommend"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="18sp"
+        android:textColor="@color/color_black"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toTopOf="@id/img_head"
+        app:layout_constraintLeft_toRightOf="@id/img_head"
+        android:layout_marginLeft="2dp"/>
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1分钟"
+        android:textSize="14sp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="@id/img_head"
+        app:layout_constraintLeft_toRightOf="@id/img_head"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/text_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+关注"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/img_head"
+        app:layout_constraintBottom_toBottomOf="@id/img_head"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/shape_like_button"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:textColor="@color/color_red"/>
+
+    <cn.carbs.android.expandabletextview.library.ExpandableTextView
+        android:id="@+id/text_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/img_head"/>
+
+    <com.jaeger.ninegridimageview.NineGridImageView
+        android:id="@+id/nineGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:imgGap="4dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/text_word"/>
+
+    <TextView
+        android:id="@+id/text_xinxi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wda"
+        android:layout_marginTop="21dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/nineGrid"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_xinxi"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@mipmap/chat"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/nineGrid"
+        app:layout_constraintRight_toLeftOf="@id/text_xinxi"/>
+
+    <TextView
+        android:id="@+id/text_xihuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wda"
+        android:textSize="16sp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintTop_toTopOf="@id/text_xinxi"
+        app:layout_constraintRight_toLeftOf="@id/img_xinxi"/>
+
+    <ImageView
+        android:id="@+id/img_xin"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@mipmap/f"
+        app:layout_constraintTop_toTopOf="@id/img_xinxi"
+        app:layout_constraintRight_toLeftOf="@id/text_xihuan"
+        android:layout_marginRight="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

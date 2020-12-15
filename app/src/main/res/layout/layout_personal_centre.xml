@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_personal"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/fanhui"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toBottomOf="@+id/img_personal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/shape_dicussed_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="官方小袍"
+            android:id="@+id/title_personal"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/liao"
+            app:layout_constraintTop_toTopOf="@id/title_personal"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="撩Ta"
+            android:textSize="16sp"
+            android:textColor="@color/color_o"
+            android:layout_marginRight="8dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:background="@drawable/shape_tag_pink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            app:layout_constraintTop_toTopOf="@id/title_personal"
+            app:layout_constraintRight_toLeftOf="@id/liao"
+            android:text="+关注"
+            android:textSize="16sp"
+            android:textColor="@color/color_red"
+            android:paddingHorizontal="13dp"
+            android:paddingVertical="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_like_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/label"
+            app:layout_constraintTop_toBottomOf="@id/title_personal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:text="分享一切有趣好玩的历史知识，爱发可爱表情包的历史爱好者~"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/level"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label"
+            android:text="6"
+            android:textSize="20sp"
+            android:textColor="@color/color_black"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/level"
+            android:text="关注"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tongQian"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label"
+            android:text="387"
+            android:textSize="20sp"
+            android:textColor="@color/color_black"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            app:layout_constraintLeft_toLeftOf="@id/tongQian"
+            app:layout_constraintTop_toBottomOf="@id/tongQian"
+            android:text="粉丝"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:id="@+id/expScore"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label"
+            android:text="6005"
+            android:textSize="20sp"
+            android:textColor="@color/color_black"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/jyz"
+            app:layout_constraintLeft_toLeftOf="@id/expScore"
+            app:layout_constraintTop_toBottomOf="@id/expScore"
+            android:text="经验值"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:id="@+id/xian"
+            app:layout_constraintTop_toBottomOf="@id/jyz"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:background="@color/color_discussed"
+            android:layout_height="3dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/img_title_personal"
+        app:layout_constraintTop_toBottomOf="@+id/img_personal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:scaleType="centerCrop"
+        android:layout_width="90dp"
+        android:layout_height="90dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
